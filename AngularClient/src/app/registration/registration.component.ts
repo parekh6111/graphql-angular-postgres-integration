@@ -27,9 +27,7 @@ export class RegistrationComponent implements OnInit {
 	showNew: Boolean = false;
 	submitType: string = "Save";
 	selectedRow: any;
-	countries: string[] = ["US", "UK", "India", "UAE"];
-	registrationList: Array<any> = [];
-	comments: Observable<any>;
+	countries: string[] = ["US", "UK", "India"];
 
 	constructor(private apollo: Apollo) {}
 
