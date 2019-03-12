@@ -44,6 +44,7 @@ export class RegistrationComponent implements OnInit {
 					lastName
 					dob
 					email
+					password
 					country
 				}
 			}
@@ -172,6 +173,7 @@ export class RegistrationComponent implements OnInit {
 		})
 		this.regModel = Object.assign({}, this.selectedRow);
 		const dob = new Date(this.selectedRow.dob);
+		console.log('ee: ', this.regModel);
 
 		this.regModel.dob = {
 			day: dob.getDate(),

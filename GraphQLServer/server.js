@@ -11,9 +11,6 @@ const models = require("./models");
 const schema = makeExecutableSchema({
   typeDefs,
   resolvers,
-  logger: {
-    log: e => console.log(e)
-  }
 });
 
 var app = express();
